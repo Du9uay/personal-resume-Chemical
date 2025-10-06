@@ -1,0 +1,164 @@
+:root {
+  /* 化工科技主题色彩系统 */
+  --background: oklch(0.1200 0.020 210);
+  --foreground: oklch(0.9800 0 0);
+  --card: oklch(0.1500 0.015 210);
+  --card-foreground: oklch(0.9500 0 0);
+  --popover: oklch(0.1800 0.015 210);
+  --popover-foreground: oklch(0.9500 0 0);
+
+  /* 主色 - 深青蓝色（化工科技感） */
+  --primary: oklch(0.6200 0.1800 200);
+  --primary-foreground: oklch(0.9800 0 0);
+
+  /* 次要色 - 翠绿色（环保与安全） */
+  --secondary: oklch(0.6500 0.1500 165);
+  --secondary-foreground: oklch(0.1200 0 0);
+
+  /* 柔和色 */
+  --muted: oklch(0.2500 0.015 210);
+  --muted-foreground: oklch(0.7000 0.010 210);
+
+  /* 强调色 - 橙色（安全警示） */
+  --accent: oklch(0.6800 0.1900 45);
+  --accent-foreground: oklch(0.1200 0 0);
+
+  /* 破坏色/警告色 */
+  --destructive: oklch(0.5800 0.2200 25);
+  --destructive-foreground: oklch(0.9800 0 0);
+
+  /* 边框 */
+  --border: oklch(0.3000 0.015 210);
+  --input: oklch(0.2800 0.015 210);
+  --ring: oklch(0.6200 0.1800 200);
+
+  /* 图表颜色 - 数据可视化 */
+  --chart-1: oklch(0.6200 0.1800 200);
+  --chart-2: oklch(0.6500 0.1500 165);
+  --chart-3: oklch(0.6800 0.1900 45);
+  --chart-4: oklch(0.5500 0.1600 250);
+  --chart-5: oklch(0.7000 0.1200 120);
+
+  /* 侧边栏 */
+  --sidebar: oklch(0.1300 0.020 210);
+  --sidebar-foreground: oklch(0.9500 0 0);
+  --sidebar-primary: oklch(0.6200 0.1800 200);
+  --sidebar-primary-foreground: oklch(0.9800 0 0);
+  --sidebar-accent: oklch(0.6800 0.1900 45);
+  --sidebar-accent-foreground: oklch(0.1200 0 0);
+  --sidebar-border: oklch(0.3000 0.015 210);
+  --sidebar-ring: oklch(0.6200 0.1800 200);
+
+  /* 字体系统 */
+  --font-sans: 'Inter', 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-serif: 'Merriweather', 'Georgia', serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* 圆角系统 */
+  --radius: 0.75rem;
+  --radius-sm: calc(var(--radius) - 0.25rem);
+  --radius-md: calc(var(--radius));
+  --radius-lg: calc(var(--radius) + 0.25rem);
+  --radius-xl: calc(var(--radius) + 0.5rem);
+
+  /* 阴影系统 - 柔和科技感 */
+  --shadow-2xs: 0 1px 2px 0px oklch(0 0 0 / 0.05);
+  --shadow-xs: 0 2px 4px 0px oklch(0 0 0 / 0.08);
+  --shadow-sm: 0 4px 6px -1px oklch(0 0 0 / 0.10), 0 2px 4px -1px oklch(0 0 0 / 0.06);
+  --shadow: 0 6px 12px -2px oklch(0 0 0 / 0.15), 0 3px 6px -2px oklch(0 0 0 / 0.08);
+  --shadow-md: 0 8px 16px -3px oklch(0 0 0 / 0.12), 0 4px 8px -2px oklch(0 0 0 / 0.06);
+  --shadow-lg: 0 12px 24px -4px oklch(0 0 0 / 0.15), 0 6px 12px -2px oklch(0 0 0 / 0.08);
+  --shadow-xl: 0 20px 32px -5px oklch(0 0 0 / 0.20), 0 10px 16px -3px oklch(0 0 0 / 0.10);
+  --shadow-2xl: 0 32px 48px -8px oklch(0 0 0 / 0.25);
+
+  /* 发光效果 - 科技感 */
+  --glow-primary: 0 0 20px oklch(0.6200 0.1800 200 / 0.3);
+  --glow-secondary: 0 0 20px oklch(0.6500 0.1500 165 / 0.3);
+  --glow-accent: 0 0 20px oklch(0.6800 0.1900 45 / 0.3);
+
+  /* 文字追踪 */
+  --tracking-normal: 0em;
+  --tracking-wide: 0.025em;
+  --tracking-wider: 0.05em;
+  --tracking-widest: 0.1em;
+
+  /* 间距系统 */
+  --spacing: 0.25rem;
+  --spacing-2: calc(var(--spacing) * 2);
+  --spacing-3: calc(var(--spacing) * 3);
+  --spacing-4: calc(var(--spacing) * 4);
+  --spacing-5: calc(var(--spacing) * 5);
+  --spacing-6: calc(var(--spacing) * 6);
+  --spacing-8: calc(var(--spacing) * 8);
+  --spacing-10: calc(var(--spacing) * 10);
+  --spacing-12: calc(var(--spacing) * 12);
+  --spacing-16: calc(var(--spacing) * 16);
+  --spacing-20: calc(var(--spacing) * 20);
+  --spacing-24: calc(var(--spacing) * 24);
+
+  /* 过渡动画时间 */
+  --duration-instant: 0ms;
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+  --duration-slower: 700ms;
+
+  /* 缓动函数 */
+  --ease-linear: linear;
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-elastic: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* 亮色主题变体（可选） */
+[data-theme="light"] {
+  --background: oklch(0.9800 0 0);
+  --foreground: oklch(0.1200 0 0);
+  --card: oklch(1.0000 0 0);
+  --card-foreground: oklch(0.1200 0 0);
+  --popover: oklch(1.0000 0 0);
+  --popover-foreground: oklch(0.1200 0 0);
+  --primary: oklch(0.5200 0.2000 200);
+  --primary-foreground: oklch(0.9800 0 0);
+  --secondary: oklch(0.5500 0.1700 165);
+  --secondary-foreground: oklch(0.9800 0 0);
+  --muted: oklch(0.9500 0 0);
+  --muted-foreground: oklch(0.4500 0 0);
+  --accent: oklch(0.6000 0.2100 45);
+  --accent-foreground: oklch(0.9800 0 0);
+  --destructive: oklch(0.5000 0.2400 25);
+  --destructive-foreground: oklch(0.9800 0 0);
+  --border: oklch(0.9000 0 0);
+  --input: oklch(0.9000 0 0);
+  --ring: oklch(0.5200 0.2000 200);
+}
+
+/* 特殊效果类 */
+.gradient-primary {
+  background: linear-gradient(135deg,
+    oklch(0.6200 0.1800 200),
+    oklch(0.6500 0.1500 165));
+}
+
+.gradient-tech {
+  background: linear-gradient(135deg,
+    oklch(0.5500 0.1600 250),
+    oklch(0.6200 0.1800 200),
+    oklch(0.6500 0.1500 165));
+}
+
+.gradient-safety {
+  background: linear-gradient(135deg,
+    oklch(0.6800 0.1900 45),
+    oklch(0.5800 0.2200 25));
+}
+
+.text-gradient {
+  background: linear-gradient(135deg,
+    oklch(0.6200 0.1800 200),
+    oklch(0.6500 0.1500 165));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
